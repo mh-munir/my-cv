@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+body {
+    font-family: "Sora", sans-serif;
+    position: fixed;
+    cursor: none;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+
+    &::before {
+        // background-image: url(../img/dxh1.jpg);
+        background-position: center;
+        background-size: cover;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+
+
+    @include cursorStyle();
+
+    .overlay {
+        @include preloaderStyle();
+    }
+}

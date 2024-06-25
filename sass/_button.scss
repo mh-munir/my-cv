@@ -1,0 +1,26 @@
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    color: $black-color;
+    background-color: $white-color;
+    border: .1rem solid $dark-color;
+}
+
+.button {
+    margin-top: 3rem;
+
+    .all__btn {
+        @include allBtn();
+        &:hover{
+            background-color: $primary-color;
+            color: $white-color !important;
+            border: .1rem solid $primary-color;
+        }
+    }
+    .all__btn:hover span{
+         color: $white-color;
+    }
+}
